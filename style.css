@@ -1,0 +1,244 @@
+/* =============================================================
+   INSTRUTOR DALVAN — FOLHA DE ESTILO COMPARTILHADA
+   Usada por index.html e prova.html.
+
+   Para trocar as CORES do site inteiro, mexa apenas no bloco
+   ":root" logo abaixo.
+   ============================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root{
+  /* Paleta: tons quentes e sóbrios (terracota + carvão) em vez de
+     azul genérico de "SaaS" — passa mais confiança e identidade
+     de negócio local. */
+  --carvao: #1c1917;
+  --carvao-2: #2b2622;
+  --creme: #faf6f0;
+  --creme-2: #f2ebe1;
+  --papel: #fffdfa;
+  --terracota: #b5502e;
+  --terracota-escuro: #8a3a1f;
+  --terracota-luz: #f2ded3;
+  --verde-zap: #25D366;
+  --tinta: #221f1c;
+  --tinta-suave: #6b6259;
+  --linha: rgba(34,31,28,0.12);
+  --linha-clara: rgba(255,255,255,0.16);
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 22px;
+  --sombra: 0 16px 40px rgba(28,25,23,0.10);
+  /* Era uma serifada (Fraunces) — trocada por sans-serif comum a
+     pedido: visual mais direto, menos "editorial/premium". Mantida
+     como variável separada porque títulos, preços e números da
+     jornada continuam referenciando var(--serif) no CSS e no HTML. */
+  --serif: 'Inter', system-ui, -apple-system, Roboto, Arial, sans-serif;
+  --sans: 'Inter', system-ui, -apple-system, Roboto, Arial, sans-serif;
+}
+
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family: var(--sans);
+  color: var(--tinta);
+  background: var(--creme);
+  line-height: 1.65;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%; display:block;}
+a{color:inherit; text-decoration:none;}
+ul{list-style:none;}
+section{padding: 100px 24px;}
+.container{max-width: 1160px; margin: 0 auto;}
+.container-narrow{max-width: 760px; margin: 0 auto;}
+
+h1,h2,h3,h4{font-family: var(--serif); font-weight:600; line-height:1.14; color: var(--carvao);}
+h2{font-size: clamp(1.9rem, 3.4vw, 2.7rem); margin-bottom: 16px; letter-spacing:-0.01em;}
+h3{font-size: 1.25rem;}
+.lead{color: var(--tinta-suave); font-size: 1.08rem; max-width: 620px;}
+.center{text-align:center; margin-left:auto; margin-right:auto;}
+
+.kicker{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color: var(--terracota);
+  font-weight:700;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.kicker::before{
+  content:"";
+  width:26px; height:2px;
+  background: var(--terracota);
+  display:inline-block;
+}
+.kicker.center{justify-content:center;}
+
+/* ---------- BOTÕES ---------- */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding: 15px 26px;
+  border-radius: var(--radius-sm);
+  font-weight:700;
+  font-size: 0.96rem;
+  border: 1.5px solid transparent;
+  cursor:pointer;
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease, border-color .15s ease;
+  white-space:nowrap;
+}
+.btn svg{flex:none;}
+.btn:hover{transform: translateY(-2px);}
+.btn-primary{background: var(--verde-zap); color:#fff; box-shadow: 0 10px 22px rgba(37,211,102,0.3);}
+.btn-dark{background: var(--carvao); color:#fff;}
+.btn-terracota{background: var(--terracota); color:#fff; box-shadow: 0 10px 22px rgba(181,80,46,0.28);}
+.btn-outline-light{background: transparent; color: var(--papel); border-color: var(--linha-clara);}
+.btn-outline-dark{background: transparent; color: var(--carvao); border-color: rgba(28,25,23,0.22);}
+.btn-outline-dark:hover{border-color: var(--carvao);}
+
+/* ---------- CABEÇALHO ---------- */
+header{
+  position: sticky; top:0; left:0; right:0;
+  z-index: 999;
+  background: rgba(250,246,240,0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--linha);
+}
+.nav{
+  max-width:1160px; margin:0 auto;
+  display:flex; align-items:center; justify-content:space-between;
+  padding: 16px 24px;
+}
+.logo{font-family:var(--serif); font-weight:600; font-size:1.28rem; display:flex; align-items:center; gap:11px; color:var(--carvao);}
+.logo-badge{
+  width:38px;height:38px;border-radius:9px;
+  background: var(--terracota);
+  color:#fff; display:flex; align-items:center; justify-content:center;
+  font-family: var(--serif); font-size:1.15rem;
+}
+.nav-links{display:flex; gap: 30px; font-weight:600; font-size:.92rem; color: var(--tinta);}
+.nav-links a{position:relative; padding: 4px 0;}
+.nav-links a:hover{color:var(--terracota);}
+.nav-cta{display:flex; align-items:center; gap:18px;}
+.nav-cta .btn{padding:11px 20px; font-size:.88rem;}
+.menu-toggle{display:none; background:none; border:none; font-size:1.5rem; cursor:pointer; color:var(--carvao);}
+
+@media (max-width: 860px){
+  .nav-links{
+    position:absolute; top:100%; left:0; right:0;
+    background: var(--papel); flex-direction:column; gap:0;
+    max-height:0; overflow:hidden;
+    transition: max-height .25s ease;
+    border-bottom: 1px solid var(--linha);
+  }
+  .nav-links.open{max-height:360px;}
+  .nav-links a{display:block; padding:16px 24px; border-top:1px solid var(--linha);}
+  .menu-toggle{display:block;}
+}
+
+/* Abaixo de ~480px o logo + botão WhatsApp + menu não cabem numa
+   linha só com o tamanho padrão — encolhe para evitar quebra de
+   linha no nome e corte do ícone do menu. */
+@media (max-width: 480px){
+  .nav{ padding: 14px 16px; }
+  .logo{ font-size: 1.02rem; gap: 8px; white-space: nowrap; }
+  .logo-badge{ width:32px; height:32px; font-size:1rem; }
+  .nav-cta{ gap: 8px; }
+  .nav-cta .btn{ padding: 9px 12px; font-size: .76rem; }
+}
+
+/* ---------- ÍCONES (SVG simples e consistentes) ---------- */
+.icon{width:22px; height:22px; stroke: currentColor; fill:none; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round;}
+.icon-lg{width:28px; height:28px;}
+
+/* ---------- FAIXA DE CONFIANÇA ---------- */
+.trust-strip{
+  background: var(--carvao);
+  color: var(--papel);
+  padding: 30px 24px;
+}
+.trust-strip .container{
+  display:flex; flex-wrap:wrap; justify-content:space-between; gap:24px;
+}
+.trust-item{display:flex; align-items:center; gap:14px; flex:1; min-width:200px;}
+.trust-item .icon{color: var(--terracota); flex:none;}
+.trust-item strong{display:block; font-family:var(--serif); font-size:1.3rem; font-weight:600;}
+.trust-item span{font-size:.82rem; color: rgba(255,253,250,0.65); font-weight:500;}
+
+/* ---------- RODAPÉ FLUTUANTE WHATSAPP ---------- */
+.whatsapp-float{
+  position:fixed; bottom:22px; right:22px; z-index:998;
+  background: var(--verde-zap); color:#fff;
+  width:58px;height:58px;border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  box-shadow: 0 12px 28px rgba(37,211,102,0.45);
+}
+.whatsapp-float .icon{width:26px; height:26px; stroke:#fff;}
+
+/* ---------- RODAPÉ ---------- */
+footer{ padding: 56px 24px 26px; background: var(--carvao); color: rgba(255,253,250,0.65); }
+.footer-grid{
+  display:grid; grid-template-columns: 1.4fr 1fr 1fr; gap:40px; margin-bottom:36px;
+}
+.footer-grid .logo{color:#fff;}
+.footer-grid h4{color:#fff; margin-bottom:16px; font-size:.85rem; font-family:var(--sans); text-transform:uppercase; letter-spacing:.08em; font-weight:700;}
+.footer-grid li{margin-bottom:11px; font-size:.92rem; display:flex; align-items:center; gap:9px;}
+/* O gap do li só vale para filhos diretos: como os links de telefone/
+   Instagram têm ícone+texto dentro do <a>, sem isso o espaçamento
+   dependia do desenho de cada ícone (ficava colado no Instagram). */
+.footer-grid a{display:flex; align-items:center; gap:9px;}
+.footer-grid a:hover{color:#fff;}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,0.12); padding-top:20px;
+  display:flex; flex-wrap:wrap; justify-content:space-between; gap:10px; font-size:.8rem;
+}
+@media (max-width:860px){ .footer-grid{grid-template-columns:1fr;} }
+
+/* ---------- GRIDS RESPONSIVOS ---------- */
+/* Usados no lugar de grid inline, para que tudo empilhe em 1
+   coluna corretamente no celular. */
+.grid-2{ display:grid; grid-template-columns: 1.05fr 0.95fr; gap:64px; align-items:center; }
+.grid-2-rev{ display:grid; grid-template-columns: 0.85fr 1.15fr; gap:64px; align-items:center; }
+.grid-2-even{ display:grid; grid-template-columns: 1fr 1fr; gap:64px; align-items:center; }
+.grid-3{ display:grid; grid-template-columns: repeat(3,1fr); gap:24px; align-items:stretch; }
+.cards-3{ display:grid; grid-template-columns: repeat(3,1fr); gap:1px; background:var(--linha); border:1px solid var(--linha); border-radius:var(--radius); overflow:hidden; }
+.plan-featured{ transform: translateY(-10px); }
+
+@media (max-width: 900px){
+  .grid-2, .grid-2-rev, .grid-2-even, .grid-3, .cards-3{ grid-template-columns: 1fr; }
+  .hero-visual-col{ order:-1; }
+  .plan-featured{ transform:none; }
+  section{ padding: 64px 20px; }
+}
+
+@media (max-width: 480px){
+  /* offset negativo original (-22px) encostava na borda da tela nos
+     celulares mais estreitos; reduz o quanto o selo "escapa" da foto. */
+  .hero-badge{ left:-8px; bottom:-16px; max-width:210px; padding:14px 16px; }
+}
+
+/* Botões com texto longo (ex: CTA final de prova.html) estouram a
+   largura da tela em aparelhos bem estreitos (~320px) porque o texto
+   não pode quebrar linha. Abaixo desse ponto, deixa quebrar e centraliza. */
+@media (max-width: 400px){
+  .btn{ white-space: normal; justify-content:center; text-align:center; }
+}
+
+.reveal{transition: opacity .6s ease, transform .6s ease;}
+.js-ready .reveal{opacity:0; transform: translateY(20px);}
+.js-ready .reveal.visible{opacity:1; transform:none;}
+
+/* ---------- FAQ (accordion) ---------- */
+.faq-q span{transition: transform .2s ease; display:inline-block;}
+.faq-item.open .faq-q span{transform: rotate(45deg);}
+.faq-item.open .faq-a{max-height:260px !important; margin-top:12px;}
+
+/* ---------- Links dentro de parágrafos (ex: dentro do FAQ) ---------- */
+.faq-a a{text-decoration: underline;}
+
