@@ -1,0 +1,17 @@
+# Instrutor Dalvan
+
+> Instrutor autônomo de aulas de direção particulares em Cotia - SP, especializado em primeira habilitação (CNH categoria B). Mais de 6 anos de experiência, carro próprio (Chevrolet Celta, câmbio manual) e acompanhamento pessoal do aluno até o Detran no dia da prova prática.
+
+## Resumo do negócio
+
+- Serviço: aulas práticas particulares de direção, individuais, para quem nunca dirigiu (primeira habilitação) e para quem já tem CNH e quer perder o medo ou recuperar a confiança (reciclagem).
+- Área de atendimento: Cotia - SP e bairros da região (Granja Viana, Jardim Nomura, Rio Cotia, Atalaia, Chácara Bela Vista).
+- Diferenciais: aulas 100% individuais, horário flexível (inclusive fins de semana), rotas de treino nas ruas reais de Cotia, foco total nas manobras cobradas no exame prático do Detran-SP, e acompanhamento pessoal do instrutor até o Detran no dia da prova.
+- Pacotes e preços: Aula Avulsa R$350 (1 aula de 50 min); Pacote Primeira Habilitação R$2.400 (10 aulas + simulação de prova + acompanhamento no dia do exame); Pacote Reciclagem R$1.100 (5 aulas).
+- Contato: WhatsApp (11) 99672-9904.
+- O instrutor não agenda a prova do Detran diretamente — o agendamento oficial é feito pela autoescola (CFC) do aluno. O instrutor prepara o aluno nas aulas práticas e o acompanha até o Detran no dia do exame.
+
+## Páginas
+
+- [Página inicial](https://diogozura.github.io/dalvan_instrutor/): apresentação do instrutor, jornada até a primeira habilitação, diferenciais, pacotes e preços, área de atendimento e perguntas frequentes.
+- [Como Agendar a Prova do Detran](https://diogozura.github.io/dalvan_instrutor/prova.html): guia passo a passo oficial de como funciona o processo de primeira habilitação em São Paulo, da abertura do Renach até a emissão da CNH, com links para os canais oficiais do Detran-SP.
