@@ -9,7 +9,7 @@ Site em HTML/CSS/JS puro (sem framework, sem build), pronto para o GitHub Pages.
 - `style.css` — todo o visual do site (cores, fontes, layout). Compartilhado pelas duas páginas.
 - `script.js` — comportamento do site (menu mobile, FAQ, animações). Compartilhado pelas duas páginas.
 - `img/` — imagens do site (troque pelas fotos reais quando tiver).
-- `robots.txt` e `sitemap.xml` — arquivos de SEO, já apontando para `https://diogozura.github.io/dalvan_instrutor/`.
+- `robots.txt` e `sitemap.xml` — arquivos de SEO, já apontando para `https://instrutordalvan.com.br/`.
 - `llms.txt` — resumo do negócio em texto simples para IAs (ChatGPT, Perplexity, Gemini) entenderem e citarem o site corretamente (GEO).
 
 ## Como editar o conteúdo
@@ -59,10 +59,10 @@ O `prova.html` explica, de forma honesta, que quem agenda oficialmente o exame p
 5. Aguarde 1–2 minutos. O GitHub vai te dar um link do tipo `https://SEU-USUARIO.github.io/instrutor-dalvan/`.
 
 ### Quando comprar um domínio próprio (ex. instrutordalvan.com.br)
-Hoje o site usa o endereço gratuito do GitHub Pages (`https://diogozura.github.io/dalvan_instrutor/`) em todas as tags de SEO. Se um dia comprar um domínio próprio:
+Hoje o site usa o endereço gratuito do GitHub Pages (`https://instrutordalvan.com.br/`) em todas as tags de SEO. Se um dia comprar um domínio próprio:
 1. Configure o DNS do domínio apontando para o GitHub Pages (o GitHub explica como em Settings → Pages → Custom domain).
 2. No repositório, em Settings → Pages, digite seu domínio no campo "Custom domain".
-3. Abra `index.html`, `prova.html`, `robots.txt`, `sitemap.xml` e `llms.txt`, e troque todas as ocorrências de `https://diogozura.github.io/dalvan_instrutor/` pelo novo domínio (Ctrl+F / Cmd+F para achar todas).
+3. Abra `index.html`, `prova.html`, `robots.txt`, `sitemap.xml` e `llms.txt`, e troque todas as ocorrências de `https://instrutordalvan.com.br/` pelo novo domínio (Ctrl+F / Cmd+F para achar todas).
 
 ## SEO e SEO local (GEO) já configurados
 
@@ -84,7 +84,7 @@ Se renomear o repositório (hoje `dalvan_instrutor`) ou publicar em outra conta,
 - Use o mesmo número de telefone e nome "Instrutor Dalvan" em todos os lugares (site, futuras redes sociais, Google, grupos de WhatsApp/Facebook de bairro).
 - Peça para alunos satisfeitos deixarem uma avaliação no Google e substitua os depoimentos de exemplo (marcados entre colchetes) pelos reais assim que possível — depoimentos falsos prejudicam a confiança e não devem ser publicados.
 - Participe/poste em grupos locais de Cotia (Facebook, WhatsApp, Instagram quando tiver) mencionando bairros específicos (Granja Viana, Jardim Nomura, Rio Cotia, Atalaia) — reforça o sinal de relevância local que o Google e as IAs generativas usam.
-- Ao divulgar, você pode linkar diretamente para `prova.html` para quem tiver dúvidas específicas sobre o exame do Detran (ex.: "veja como funciona o agendamento da prova: https://diogozura.github.io/dalvan_instrutor/prova.html").
+- Ao divulgar, você pode linkar diretamente para `prova.html` para quem tiver dúvidas específicas sobre o exame do Detran (ex.: "veja como funciona o agendamento da prova: https://instrutordalvan.com.br/prova.html").
 
 ## Estrutura simples de propósito
 

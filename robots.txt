@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://diogozura.github.io/dalvan_instrutor/sitemap.xml
+Sitemap: https://instrutordalvan.com.br/sitemap.xml

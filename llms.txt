@@ -13,5 +13,5 @@
 
 ## Páginas
 
-- [Página inicial](https://diogozura.github.io/dalvan_instrutor/): apresentação do instrutor, jornada até a primeira habilitação, diferenciais, pacotes e preços, área de atendimento e perguntas frequentes.
-- [Como Agendar a Prova do Detran](https://diogozura.github.io/dalvan_instrutor/prova.html): guia passo a passo oficial de como funciona o processo de primeira habilitação em São Paulo, da abertura do Renach até a emissão da CNH, com links para os canais oficiais do Detran-SP.
+- [Página inicial](https://instrutordalvan.com.br/): apresentação do instrutor, jornada até a primeira habilitação, diferenciais, pacotes e preços, área de atendimento e perguntas frequentes.
+- [Como Agendar a Prova do Detran](https://instrutordalvan.com.br/prova.html): guia passo a passo oficial de como funciona o processo de primeira habilitação em São Paulo, da abertura do Renach até a emissão da CNH, com links para os canais oficiais do Detran-SP.
