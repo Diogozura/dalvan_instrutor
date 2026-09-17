@@ -32,13 +32,13 @@ O site está sem links de Instagram por enquanto (foi removido do rodapé, do bo
 Vá até a seção `PACOTES / PREÇOS` em `index.html`. Cada pacote é um bloco `<div class="reveal" ...>` com um `<h3>` (nome), um parágrafo (descrição), um preço e uma lista `<ul>` de itens inclusos. Edite só o texto — sem mexer no restante do HTML. O pacote do meio (`Pacote Primeira Habilitação`) tem a classe extra `plan-featured`, que o destaca visualmente; mova essa classe para outro card se quiser destacar outro pacote.
 
 ### Trocar imagens
-Substitua os arquivos dentro da pasta `img/` mantendo o **mesmo nome de arquivo** (`hero-instrutor.jpg`, `instrutor-perfil.jpg`, `carro-celta.jpg`, `nova-capa-compartilhamento.png`, `favicon.png`). As que estão lá agora são apenas placeholders — troque pelas fotos reais assim que tiver.
+Substitua os arquivos dentro da pasta `img/` mantendo o **mesmo nome de arquivo** (`hero-instrutor.jpg`, `instrutor-perfil.jpg`, `carro-celta.jpg`, `nova-capa-compartilhamento.jpg`, `favicon.png`). As que estão lá agora são apenas placeholders — troque pelas fotos reais assim que tiver.
 
 Tamanhos recomendados:
 - `hero-instrutor.jpg`: retrato, proporção 4:5 (ex. 900x1100px)
 - `instrutor-perfil.jpg`: retrato, proporção 4:5
 - `carro-celta.jpg`: paisagem, proporção 4:3 (ex. 1000x750px)
-- `nova-capa-compartilhamento.png`: 1200x630px (aparece quando o link é compartilhado no WhatsApp/Facebook)
+- `nova-capa-compartilhamento.jpg`: 1200x630px, JPEG (aparece quando o link é compartilhado no WhatsApp/Facebook) — mantenha o arquivo leve (idealmente abaixo de 300KB), pois imagens muito grandes (ex. PNG de 1-2MB) fazem o WhatsApp falhar ao carregar a prévia
 - `favicon.png`: 64x64px (ícone da aba do navegador)
 
 ### Depoimentos de alunos
