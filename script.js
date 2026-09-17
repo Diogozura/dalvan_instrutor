@@ -1,5 +1,11 @@
 // Comportamento compartilhado do site (menu, ano, animação ao rolar, FAQ)
 
+// Remove "index.html" da barra de endereço (ex: /index.html#jornada -> /#jornada)
+if (/\/index\.html$/i.test(window.location.pathname)) {
+  const url = window.location.pathname.replace(/index\.html$/i, '') + window.location.search + window.location.hash;
+  window.history.replaceState(null, '', url);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   // Ano automático no rodapé
   const anoEl = document.getElementById('ano');
