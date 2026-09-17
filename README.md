@@ -48,7 +48,9 @@ Na seção "Quem aprendeu com o Dalvan, recomenda" (`index.html`), troque o text
 No topo do `style.css`, dentro do bloco `:root { ... }`, estão todas as cores em hexadecimal (`--terracota`, `--carvao`, `--creme`, etc.) usadas no site inteiro. Troque os valores ali para mudar a identidade visual de uma vez só, nas duas páginas. As fontes (Fraunces para títulos, Inter para o texto) vêm do Google Fonts pela primeira linha do arquivo.
 
 ### Editar a página "Como Agendar a Prova"
-O `prova.html` explica, de forma honesta, que quem agenda oficialmente o exame prático é a autoescola (CFC), e que você acompanha o aluno até o Detran no dia da prova. Os links da seção "Canais oficiais" apontam para o site do Detran-SP e do Poupatempo — não altere essas URLs, pois são os canais oficiais do governo de SP. Valores de taxas e exigências (como o exame toxicológico) mudam com frequência; a página já deixa um aviso pedindo para o aluno confirmar no site oficial.
+O `prova.html` explica, de forma honesta, que desde maio de 2026 o próprio aluno pode agendar o exame prático diretamente com o Detran-SP (sem depender de autoescola), e que as aulas práticas do instrutor Dalvan contam oficialmente para a carga horária por ele ser credenciado no Detran-SP (registro via Portal da SENATRAN). O curso e a prova teórica continuam exigindo autoescola (CFC) ou EAD credenciado — isso não mudou. Os links da seção "Canais oficiais" apontam para o site do Detran-SP e do Poupatempo — não altere essas URLs, pois são os canais oficiais do governo de SP. Valores de taxas e exigências (como o exame toxicológico) mudam com frequência; a página já deixa um aviso pedindo para o aluno confirmar no site oficial.
+
+**Importante:** se o credenciamento do instrutor no Detran-SP expirar ou for suspenso em algum momento, atualize esses trechos removendo as menções a "aulas que contam oficialmente" — isso só é verdade enquanto o credenciamento estiver ativo.
 
 ## Como publicar no GitHub Pages
 
