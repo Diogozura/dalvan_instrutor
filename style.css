@@ -242,21 +242,4 @@ footer{ padding: 56px 24px 26px; background: var(--carvao); color: rgba(255,253,
 /* ---------- Links dentro de parágrafos (ex: dentro do FAQ) ---------- */
 .faq-a a{text-decoration: underline;}
 
-/* ---------- CARROSSEL DE AVALIAÇÕES (Google) ---------- */
-.reviews-track{ display:flex; overflow:hidden; border-radius: var(--radius-lg); }
-.review-card{ flex: 0 0 100%; }
-.review-arrow{
-  position:absolute; top:50%; transform:translateY(-50%);
-  width:44px; height:44px; border-radius:50%;
-  background: var(--papel); border:1px solid var(--linha);
-  display:flex; align-items:center; justify-content:center;
-  cursor:pointer; box-shadow: var(--sombra); z-index:2; color:var(--carvao);
-}
-.review-arrow:hover{ border-color: var(--terracota); color: var(--terracota); }
-.review-arrow.prev{ left:-22px; }
-.review-arrow.next{ right:-22px; }
-@media (max-width: 680px){
-  .review-arrow.prev{ left:-8px; }
-  .review-arrow.next{ right:-8px; }
-}
 

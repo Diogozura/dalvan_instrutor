@@ -540,13 +540,13 @@
      Para adicionar uma avaliação real nova, copie um bloco
      <div class="review-card reveal">...</div> dentro de
      #reviewsTrack e ajuste nome, iniciais, nota e texto.
-     As setas do carrossel aparecem sozinhas quando houver mais
-     de uma avaliação. NÃO adicione avaliações fictícias aqui —
+     As avaliações ficam lado a lado (3 por linha no desktop, 1 por
+     linha no celular). NÃO adicione avaliações fictícias aqui —
      isso é propaganda enganosa (Art. 37 do CDC) e viola as
      políticas de avaliações do Google.
      ========================================================= -->
 <section id="avaliacoes">
-  <div class="container-narrow">
+  <div class="container">
     <span class="kicker center">Depoimentos reais</span>
     <h2 class="center">Avaliações dos alunos</h2>
 
@@ -557,12 +557,7 @@
       <span style="color:var(--tinta-suave); font-size:.88rem;">(Avaliações no Google)</span>
     </div>
 
-    <div style="position:relative; max-width:600px; margin:0 auto;">
-      <button id="reviewPrev" class="review-arrow prev" aria-label="Avaliação anterior" style="display:none;">
-        <svg class="icon" style="width:18px;height:18px;" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg>
-      </button>
-
-      <div class="reviews-track" id="reviewsTrack">
+    <div class="grid-3" id="reviewsTrack">
         <div class="review-card reveal" style="background:var(--papel); border:1px solid var(--linha); border-radius:var(--radius-lg); box-shadow:var(--sombra); padding:32px;">
           <div style="display:flex; align-items:center; gap:14px; margin-bottom:14px;">
             <div style="width:46px;height:46px;border-radius:50%; background:var(--terracota); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700; flex:none;">DH</div>
@@ -587,11 +582,6 @@
           <div style="color:#f5b400; font-size:1rem; letter-spacing:2px; margin-bottom:12px;" aria-hidden="true">★★★★★</div>
           <p style="color:var(--tinta-suave); font-size:.98rem;">Dalvan é muito prestativo, ensina muito bem e tem valores excelentes!</p>
         </div>
-      </div>
-
-      <button id="reviewNext" class="review-arrow next" aria-label="Próxima avaliação" style="display:none;">
-        <svg class="icon" style="width:18px;height:18px;" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
-      </button>
     </div>
 
     <div style="text-align:center; margin-top:34px;">

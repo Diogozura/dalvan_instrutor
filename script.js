@@ -30,32 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Carrossel de avaliações (Google) — setas só aparecem quando
-  // houver mais de uma avaliação real cadastrada em #reviewsTrack
-  const reviewsTrack = document.getElementById('reviewsTrack');
-  const reviewPrev = document.getElementById('reviewPrev');
-  const reviewNext = document.getElementById('reviewNext');
-  if (reviewsTrack && reviewPrev && reviewNext) {
-    const cards = reviewsTrack.querySelectorAll('.review-card');
-    let reviewIndex = 0;
-    if (cards.length > 1) {
-      reviewPrev.style.display = 'flex';
-      reviewNext.style.display = 'flex';
-      const updateReviews = () => {
-        reviewsTrack.style.transition = 'transform .3s ease';
-        reviewsTrack.style.transform = `translateX(-${reviewIndex * 100}%)`;
-      };
-      reviewPrev.addEventListener('click', () => {
-        reviewIndex = (reviewIndex - 1 + cards.length) % cards.length;
-        updateReviews();
-      });
-      reviewNext.addEventListener('click', () => {
-        reviewIndex = (reviewIndex + 1) % cards.length;
-        updateReviews();
-      });
-    }
-  }
-
   // Animação leve ao rolar a página (progressive enhancement:
   // o conteúdo já nasce visível via CSS, então nada quebra se o JS falhar)
   document.documentElement.classList.add('js-ready');
